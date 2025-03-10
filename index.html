@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Minecraft</title>
+    <script src="https://unpkg.com/kaboom@next/dist/kaboom.js"></script>
+</head>
+<body>
+    <script>
+        kaboom();
+
+        // Load sprite
+        loadSprite("mario", "https://i.imgur.com/Wb1qfhK.png");
+
+        // Add a simple game scene
+        scene("main", () => {
+            add([sprite("mario"), pos(120, 80)]);
+        });
+
+        // Start the game
+        start("main");
+    </script>
+</body>
+</html>
